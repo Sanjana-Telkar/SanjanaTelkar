@@ -765,31 +765,127 @@ footer p {
     }
 }
 
-/* Responsive Styles for Mobile Phones */
-@media (max-width: 480px) {
-    /* Adjust header navigation for small screens */
+/* Responsive Styles */
+
+/* For devices with a maximum width of 1024px */
+@media (max-width: 1024px) {
+    .intro-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro-text p {
+        font-size: 1.5rem;
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .graphic-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .resume-section p,
+    .resume-section ul li {
+        font-size: 0.9rem;
+    }
+}
+
+/* For devices with a maximum width of 768px */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .intro-text,
+    .intro-image {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .intro-text h1 {
+        font-size: 2rem;
+    }
+
+    .intro-text p {
+        font-size: 1.2rem;
+    }
+
+    .about-image,
+    .about-content {
+        flex: 100%;
+        padding: 0;
+    }
+
+    .activities {
+        flex-direction: column;
+    }
+
+    .activity {
+        max-width: 80%;
+    }
+}
+
+/* For devices with a maximum width of 576px */
+@media (max-width: 576px) {
     header nav ul {
         flex-direction: column;
         align-items: center;
     }
-    
+
     header nav ul li {
-        margin: 5px 0;
+        margin: 10px 0;
     }
-    
-    /* Reduce font sizes for better readability */
-    #introduction h1 {
-        font-size: 2rem;
+
+    .intro-text h1 {
+        font-size: 1.5rem;
     }
-    
-    #about-me h2, #what-i-am-doing h2, #portfolio h2, 
-    #graphic-designs h2, #artworks h2, #resume h2, #contact h2 {
-        font-size: 2rem;
+
+    .intro-text p {
+        font-size: 1rem;
     }
-    
-    /* Reduce padding for a more compact layout */
-    #introduction, #about-me, #what-i-am-doing, #portfolio, #graphic-designs, #artworks, #resume, #contact {
-        padding: 1rem 2%;
+
+    .about-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-content p {
+        font-size: 0.9rem;
+    }
+
+    .resume-section {
+        padding: 20px;
+    }
+
+    .resume-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .resume-section p,
+    .resume-section ul li {
+        font-size: 0.8rem;
+    }
+
+    .portfolio-grid,
+    .graphic-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-details p {
+        font-size: 1rem;
+    }
+
+    .contact-btn {
+        padding: 8px 15px;
+        font-size: 1rem;
     }
 }
 
